@@ -45,3 +45,167 @@ img {
     display: block;
     max-width: 100%;
 }
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.topbar {
+    height: 84px;
+    padding: 0 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    overflow: hidden;
+}
+
+.topbar-brand {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-logo {
+    width: auto;
+    height: 120px;
+    object-fit: contain;
+}
+
+.topbar-user {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.user-avatar {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    background-color: var(--color-primary-light);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.user-info strong {
+    color: var(--color-text);
+}
+
+.user-info span {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}
+
+/* =========================================
+   LAYOUT INTERNO
+========================================= */
+
+.app-layout {
+    min-height: calc(100vh - 84px);
+    display: grid;
+    grid-template-columns: 280px 1fr;
+}
+
+
+/* =========================================
+   MENU LATERAL
+========================================= */
+
+.sidebar {
+    padding: 28px 18px;
+    background-color: var(--color-white);
+    border-right: 1px solid var(--color-border);
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-item {
+    width: 100%;
+    min-height: 52px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1rem;
+    color: var(--color-text);
+    background-color: transparent;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.sidebar-menu .menu-item img {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    max-width: 24px;
+    min-height: 24px;
+    max-height: 24px;
+    object-fit: contain;
+    flex: 0 0 24px;
+}
+
+.menu-item:hover {
+    background-color: #eef7f2;
+}
+
+.menu-item.active {
+    color: var(--color-primary-dark);
+    font-weight: 700;
+    background-color: var(--color-primary-light);
+}
+
+.menu-item.disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.logout-button {
+    margin-top: 12px;
+}
+
+
+/* =========================================
+   CONTEÚDO PRINCIPAL
+========================================= */
+
+.main-content {
+    padding: 38px 42px;
+    background-color: var(--color-background);
+}
+
+.main-content h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    color: var(--color-primary-dark);
+}
+
+.main-content h2 {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
+.main-content > p {
+    color: var(--color-text-light);
+}
