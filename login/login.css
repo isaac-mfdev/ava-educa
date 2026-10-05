@@ -358,3 +358,67 @@ body {
         font-size: 1.6rem;
     }
 }
+
+/* =========================================
+   AJUSTE MOBILE DO LOGIN
+========================================= */
+
+@media (max-width: 767px) {
+
+    body {
+        overflow: auto;
+    }
+
+    .login-area {
+        padding: 20px 16px;
+    }
+
+    .login-card {
+        padding: 26px 28px;
+        border-radius: 18px;
+    }
+
+    .login-logo {
+        margin-bottom: 24px;
+    }
+
+    .login-logo img {
+        max-width: 210px;
+        margin: 0 auto;
+    }
+
+    .login-heading {
+        margin-bottom: 28px;
+    }
+
+    .login-heading h1 {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .login-heading p {
+        font-size: 1rem;
+    }
+
+    .login-form {
+        gap: 20px;
+    }
+
+    .form-group {
+        gap: 8px;
+    }
+
+    .form-group input {
+        min-height: 56px;
+        padding: 12px 18px;
+    }
+
+    .login-button {
+        min-height: 56px;
+    }
+
+    .forgot-password {
+        margin-top: 20px;
+    }
+
+}

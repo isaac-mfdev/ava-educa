@@ -102,3 +102,90 @@
     }
 
 }
+
+/* =========================================
+   RESPONSIVIDADE MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .courses-section {
+        margin-top: 32px;
+    }
+
+
+    /* CABEÇALHO DOS CURSOS */
+
+    .courses-header {
+        margin-bottom: 20px;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .courses-header h3 {
+        font-size: 1.55rem;
+    }
+
+    .courses-header span {
+        padding-top: 4px;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+
+
+    /* GRID */
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    /* CARD */
+
+    .course-card {
+        width: 100%;
+        padding: 22px;
+        border-radius: 14px;
+    }
+
+
+    .course-card-header {
+        gap: 16px;
+        padding-bottom: 18px;
+    }
+
+
+    .course-icon {
+        width: 64px;
+        height: 64px;
+        flex: 0 0 64px;
+    }
+
+    .course-card h4 {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    .course-card-header p {
+        font-size: 0.95rem;
+    }
+
+
+    /* DATAS */
+
+    .course-dates {
+        padding-top: 18px;
+
+        gap: 16px;
+    }
+
+    .course-dates span {
+        font-size: 0.85rem;
+    }
+
+    .course-dates strong {
+        font-size: 0.95rem;
+    }
+
+}
