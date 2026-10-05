@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVA-EDUCA+ | Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <main class="login-page">
+        <section class="login-presentation">
+
+            <div class="brand">
+                <img src="..//assets/imagens/logo-ava-educa.png" 
+                     alt="Logo AVA EDUCA+"
+                     class="brand-logo"    >
+            </div>
+
+            <div class="presentation-content">
+                <span class="presentation-line"></span>
+                <h1>
+                    <span class="title-first-line">
+                            Educação <strong>transforma</strong>
+                    </span>
+
+                    <span class="title-second-line">
+                            realidades.
+                    </span>
+                </h1>
+
+                <p>
+                    No AVA-EDUCA+ você aprende, se desenvolve e constrói um futuro com mais oportunidades.
+                </p>
+
+                <div class="benefits">
+                    <article class="benefit">
+                        <div class="benefit-icon"> 
+                            📖
+                        </div>
+                        <div>
+                            <h2>Conhecimento acessível</h2>
+
+                            <p>
+                                Cursos para apoiar e ampliar o seu desenvolvimento profissional.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="benefit">
+                        <div class="benefit-icon"> 
+                            👥
+                        </div>
+
+                        <div>
+                            <h2>Metas claras</h2>
+
+                            <p>
+                                Desenvolva novas habilidades e conhecimentos.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="benefit">
+                        <div class="benefit-icon"> 
+                            🎓
+                        </div>
+
+                        <div>
+                            <h2>Educação que transforma</h2>
+
+                            <p>
+                                Informação organizada para facilitar o aprendizado.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="login-area">
+            <div class="login-card">
+                <div class="login-card-brand">
+                       
+                    <img src="..//assets/imagens/logo-ava-educa.png" 
+                     alt="Logo AVA EDUCA+"
+                     class="brand-logo"     >
+
+                </div>
+
+                <div class="login-heading">
+
+                    <h2>Bem Vindo(a) de volta!</h2>
+
+                    <p>Acesse sua conta para continuar.</p>
+                </div>
+
+                <form id="login-form" class="login-form">
+
+                    <div class="form-group">
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input 
+                               type="email" 
+                               id="email" 
+                               name="email" 
+                               placeholder="Digite seu e-mail" 
+                               required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">
+                            Senha
+                        </label>
+
+                        <input 
+                               type="password" 
+                               id="senha" 
+                               name="senha" 
+                               placeholder="Digite sua senha"
+                               autoComplete="current-password" 
+                               required
+                        >
+                    </div>
+
+                    <div 
+                        id="login-feedback"
+                        class="login-feedback"
+                        aria-live="polite">
+                    </div>
+
+                    <button type="submit" 
+                            class="login-button">
+                        Entrar
+                    </button>
+
+                    <button id="forgot-password" 
+                            class="forgot-password">
+                        
+                            Esqueceu sua senha?
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="./login.js"></script>
+    
+</body>
+</html>

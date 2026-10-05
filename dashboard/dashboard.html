@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | AVA-EDUCA+</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="topbar-brand">
+            <img
+                src="../assets/imagens/logo-ava-educa.png"
+                alt="Logo AVA-EDUCA+"
+                class="topbar-logo"
+            >
+        </div>
+
+        <div class="topbar-user">
+            <div class="user-avatar" id="user-avatar">
+                AC  
+            </div>
+
+            <div class="user-info">
+                <strong id="user-name"> Usauário </strong>
+                <span> Professor(a) </span>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="app-layout">
+        <aside class="sidebar">
+            <nav class="sidebar-menu">
+                <a href="./dashboard.html" class="menu-item active">
+                    <img src="../assets/icons/dashboard.svg" alt="" >
+
+                    <span>Dashboard</span>
+                </a>
+
+                <button type="button" class="menu-item disabled" >
+                    <img src="..//assets/icons/book.svg" alt=""  >
+
+                    <span>Cursos</span>
+                </button>
+
+                <a href="../cadastro-aluno/cadastro-aluno.html" class="menu-item">
+                    <img src="..//assets/icons/students.svg" alt="">
+                    <span>Cadastro de Alunos</span>
+                </a>
+
+                <button type="button" id="logout-button" class="menu-item logout-button">
+                    <img
+                        src="../assets/icons/logout.svg"
+                        alt=""
+                    >
+                    <span>Sair</span>
+                </button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1>Dashboard</h1>
+
+            <h2 id="welcome-message">Bem-vindo(a)</h2>
+
+            <p>Aqui estão os meus cursos disponíveis no momento.</p>
+
+            <section class="courses-section">
+
+                <div class="courses-header">
+                    <h3>Meus Cursos</h3>
+
+                    <span id="courses-count">
+                            0 cursos cadastrados
+                    </span>
+                </div>
+
+                <div
+                    id="courses-container"
+                    class="courses-grid" >
+                </div>
+
+                <div
+                    id="courses-feedback"
+                    class="courses-feedback" >
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="./dashboard.js"></script>
+</body>
+
+</html>
