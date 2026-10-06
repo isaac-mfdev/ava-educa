@@ -45,7 +45,7 @@ Todas as alterações utilizadas no projeto foram analisadas e testadas antes de
 
 # Link do vídeo de apresentação
 
-Adicionar após a gravação:
+https://drive.google.com/drive/folders/1Go8IFcGJWymEQi4xbHujIgj48chGXnpx?usp=sharing
 
 ---
 
@@ -603,13 +603,15 @@ Esse processo permite manter a branch principal separada durante o desenvolvimen
 Para executar o projeto é recomendado possuir:
 
 - Visual Studio Code;
+    - Selecionar o arquivo index.html
 - Extensão Live Server;
 - Navegador Google Chrome ou outro navegador moderno.
 
 Não é necessário possuir banco de dados ou servidor back-end.
 
 Outra Forma de Execução é pelo Link do GitHub, cujo onde está hospedado.
-
+- LINK https://isaac-mfdev.github.io/ava-educa/
+ 
 ---
 
 ## Clonar o projeto
